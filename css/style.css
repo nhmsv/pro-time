@@ -1,0 +1,502 @@
+body
+{
+    background-image: url("../img/back3.jpg");
+    background-color: #cccccc;
+  background-repeat: repeat;
+ 
+}
+h1,h5{
+    text-align: center;
+    font-family:serif; 
+    
+  
+ 
+}
+h2 {text-align:left;}
+
+li {
+    display: inline;
+  
+
+}
+p{
+    
+    text-align:center;
+    margin-top: 10px;
+}
+
+#header img {
+  border-radius: 50%;
+  width: 200px;
+  height: 140px;
+  margin-left: 50px;
+  margin-right: 50px;
+    
+}
+
+
+
+#header
+{
+   
+  background-color:#9fdfbd;
+  padding-top: 1px;
+    padding-bottom: 10px;
+  height:150px;
+  
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+}
+
+#header * {
+    display: inline;
+}
+
+#header li {
+    margin: 15px;
+    margin-left: 50px;
+}
+
+ #header li a {
+    color: black;
+    text-decoration: none;
+}
+
+
+#char{
+    
+    
+    float: right;
+  width: 400px;
+  height: 330px;
+  margin:20px ;
+
+  
+    
+}
+
+
+ th , td {
+    
+    border: 1px Solid black;
+    padding:5px ;
+    text-align: center ;
+   
+   
+           
+}
+table.t{
+
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+   width: 100%;
+  length:500% ;
+ margin: auto;
+}
+.box{
+    
+   padding-bottom: 25px;  
+  
+} 
+
+
+.b{
+    display: block;
+    background-color: #9fdfbd;
+  color: white;
+  padding: 14px 20px ;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  text-align: center;
+  height: 25%
+}
+.bt{
+  padding-bottom: 6px;  
+}
+
+
+.f{
+   padding-top: 100px;
+  padding-left: 150px;
+  padding-right: 100px;
+  padding-bottom: 150px;  
+  display: inline-block;
+   border: 5px ;
+   color: white;
+   text-align: center;
+           
+ border-collapse: separate;
+ pandding:10px;
+ width: 350px;
+             margin: auto ;
+}
+
+#contents
+{
+    
+    background-color:#cbcbb4 ;
+    padding-top: 1px;
+    height: 400px;
+  
+}
+    
+
+
+#footer
+{
+    
+     padding-top: 1px;
+     height: 250px;
+    background-color: #9fdfbd;
+    
+
+    
+    
+}
+
+
+
+
+#column1,#column2,#column3
+{
+	background-color: #9fdfbd;
+     padding-top: 1px;
+	height: 150px;
+	width:300px;
+        color: black;
+        display:inline;
+
+
+
+}
+
+
+.column
+{
+	float:left;
+        padding: 20px 15px ;
+
+
+}
+.c{
+    background-color: red;
+
+}
+
+
+
+.left
+{
+text-align:left;
+}
+.center
+{
+text-align:center;
+}
+
+
+
+
+
+/* Bordered form */
+form {
+
+  margin-left: 50px;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #9fdfbd;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  margin: 10px ;
+}
+
+
+
+/* Add padding to containers */
+.container {
+  padding: 20px;
+
+
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: left;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 20%;
+
+  }
+}
+
+
+ textarea{
+
+             border: 2px;
+             color: white;
+             background-color:#9fdfbd;
+             text-align: center;
+            }
+            label{
+            text-align: center;
+            color: darkslategray;
+            }
+
+            p{
+                text-align: center;
+                color:darkslategray;
+
+            }
+
+
+ .home{
+
+      border: 5px ;
+             color: white;
+             text-align: center;
+             display: inline-block;
+             border-collapse: separate;
+             pandding:10px;
+             width: 350px;
+             margin: auto ;
+ }
+
+
+ body {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+  }
+ #calendar {
+  width: 650px;
+  margin: 0 auto;
+  }
+
+  .fc .fc-button-group > * {
+    float: left;
+    margin: 0 0 0 -1px;
+}
+.fc-state-default.fc-corner-right {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+button, html [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button;
+}
+.fc-toolbar button {
+    position: relative;
+}
+.fc button {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+
+    white-space: nowrap;
+    cursor: pointer;
+}
+.fc-state-default {
+    background-color: #f5f5f5;
+    background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+    background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+    background-repeat: repeat-x;
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #333;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.fc-state-default {
+    border: 1px solid;
+}
+input, button, select, textarea {
+    line-height: inherit;
+}
+a, area, button, [role="button"], input, label, select, summary, textarea {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+button {
+    background-color: #9fdfbd;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+button {
+    background-color: #9fdfbd;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width:32%;
+}
+*, *::before, *::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"], input[type="file"]::-webkit-file-upload-button, button {
+    padding: 1px 6px;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"], input[type="file"]::-webkit-file-upload-button, button {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    background-color: buttonface;
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+}
+
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+}
+
+input, textarea, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb !important;
+}
+
+button {
+    -webkit-appearance: button;
+}
+.fc-toolbar {
+    text-align: center;
+}
+.fc-state-default.fc-corner-right {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.fc-icon-right-single-arrow:after {
+    content: "\0203A";
+    font-weight: bold;
+    font-size: 200%;
+    top: -7%;
+    padding-right: 25px
+}
+.fc-icon {
+    display: inline-block;
+    height: 1em;
+    line-height: 2px;
+    font-size: 2px;
+    text-align: center;
+    overflow: hidden;
+    font-family: "Courier New", Courier, monospace;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+body .fc {
+    font-size: 1em;
+}
+.fc {
+    direction: ltr;
+    text-align: left;
+}
+body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #292b2c;
+    background-color: #fff;
+}
+html {
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+}
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+*, *::before, *::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+*, *::before, *::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
