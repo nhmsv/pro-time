@@ -1,11 +1,12 @@
 <?php
 $title = 'update_task';
 include'header.php';
-include "db_config.php";
+
+if(!$logged_in)
+    header('Location: index.php');
 
 
-
-$uid = (isset($_GET['uid']))? $_GET['uid'] : 1;
+$uid = (isset($_GET['uid']))? $_GET['uid'] :  $_SESSION['uid'];
 $title = (isset($_GET['title']))? $_GET['title'] : null;
 $start = (isset($_GET['start']))? $_GET['start'] : null;
 $end = (isset($_GET['end']))? $_GET['end'] : null;
@@ -15,9 +16,8 @@ if(!empty($uid) && !empty(trim($title)) && $title != "null" && !empty($start) &&
 
     $sql = "INSERT INTO `task` (`id`, `uid`, `Title`, `start`, `end`) VALUES (null, '$uid', '$title', '$start', '$end')";
 
-    echo $sql;
     $result = mysqli_query($con, $sql);
-    var_dump($result);
+
 
     if($result==1)
     {$status="done";
@@ -31,23 +31,7 @@ if(!empty($uid) && !empty(trim($title)) && $title != "null" && !empty($start) &&
 }
 ?>
 
-
-    <form id="contact" name="add" method="POST" action="add-item.php">
-
-        Name  :
-        <input type="text" name="name" value="" style="width:200px ; height: 20px ">
-        ID:
-        <input type="text" name="id" value="" style="width:200px ; height: 20px ">
-
-        <input type="submit" value="add">  <input type="submit" value="update">  <input type="submit" value="Delete">
-
-        <div id='calendar' style="background: #ffffff; margin-top: 20px; margin-bottom: 20px;"></div>
-
-    </form>
-
-<?PHP
-
-?>
+    <div id='calendar' style="background: #ffffff; margin-top: 20px; margin-bottom: 20px;"></div>
 
     <script>
 
@@ -93,7 +77,7 @@ if(!empty($uid) && !empty(trim($title)) && $title != "null" && !empty($start) &&
                 eventLimit: true, // allow "more" link when too many events
                 events: [
                     <?PHP
-                    $sql = "SELECT * FROM `task`";
+                    $sql = "SELECT * FROM `task` Where 1 AND uid =$uid";
                     $result = mysqli_query($con,$sql);
 
                     while ($row = mysqli_fetch_array($result, 1)) {
